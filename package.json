@@ -1,5 +1,5 @@
 {
-  "name": "simple-calendar",
+  "name": "colorful-calendar",
   "version": "1.0.0",
   "description": "A simple calendar component for react",
   "main": "Calendar.js",
@@ -13,6 +13,7 @@
   "keywords": [
     "simple",
     "calendar",
+    "colorful",
     "react",
     "reactjs",
     "component"
