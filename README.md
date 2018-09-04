@@ -1,6 +1,6 @@
 # colorful-calendar
 
-[![colorful-calendar](https://badge.fury.io/js/colorful-calendar.svg)](https://badge.fury.io/js/colorful-calendar)[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+[![npm version](https://badge.fury.io/js/colorful-calendar.svg)](https://badge.fury.io/js/colorful-calendar)
 
 A simple calendar component for react applications
 
