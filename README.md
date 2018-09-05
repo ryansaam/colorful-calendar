@@ -6,8 +6,9 @@ A simple calendar component for react applications
 
 ```jsx
 import React, { Component } from 'react'
-import Calendar from 'Calendar'
-import { redflat } from 'calendar.colors'
+import Calendar, { colorTheme } from 'colorful-calendar'
+import 'colorful-calendar/Calendar.css'
+import 'colorful-calendar/mediaqueries.css'
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
       <div className="App">
         <Calendar
           date={new Date()}
-          colors={redflat}
+          colors={colorTheme.redflat}
         >
       <div>
     )
@@ -55,10 +56,12 @@ Pass a custom colors object
   nextMonthNodesBG: "#8ee5ff"
 }
 ```
-... or if you wish you can modify the calendar.colors.js file
+... or if you wish you can create a custom.colors.js file
+Note: you can name this file whatever you would like.
 
+### custom.colors.js
 ```js
-const original = {
+const myNewColorTheme = {
   textColor: "#000",
   componentBG: "#292828",
   header1BG: "#fff",
@@ -71,12 +74,33 @@ const original = {
   nextMonthNodesBG: "#8ee5ff"
 }
 
-export { ..., original, ... }
+export { myNewColorTheme, ... , ... }
+```
+### App.js
+```jsx
+import React, { Component } from 'react'
+import Calendar from 'colorful-calendar'
+import { myNewColorTheme } from './custom.colors.js'
+import 'colorful-calendar/Calendar.css'
+import 'colorful-calendar/mediaqueries.css'
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Calendar
+          date={new Date()}
+          colors={myNewColorTheme}
+        >
+      <div>
+    )
+  }
+}
 ```
 
-## Color options
+## Color theme options
 
-Color name |
+Color theme name |
 ---------- |
 | original
 | redflat
