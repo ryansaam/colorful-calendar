@@ -105,4 +105,6 @@ Color theme name |
 | original
 | redflat
 
+## Contribute
 
+See development repository [here](https://github.com/ryansaam/colorful-calendar-dev)
