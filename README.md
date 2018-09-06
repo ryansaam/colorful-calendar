@@ -56,7 +56,7 @@ Pass a custom colors object
   nextMonthNodesBG: "#8ee5ff"
 }
 ```
-... or if you wish you can create a custom.colors.js file
+... or if you wish you can create a custom.colors.js file  
 Note: you can name this file whatever you would like.
 
 ### custom.colors.js
